@@ -1,0 +1,33 @@
+@font-face {
+    font-family: BaiJamjuree-Light;
+    src: url(fonts/BaiJamjuree-Light.ttf);
+}
+@font-face {
+    font-family: BaiJamjuree-Bold;
+    src: url(fonts/BaiJamjuree-Bold.ttf);
+}
+@font-face {
+    font-family: BaiJamjuree-Medium;
+    src: url(fonts/BaiJamjuree-Medium.ttf);
+}
+
+body {
+    font-family: Mali, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Verdana;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+#username_label {
+    color: rgb(255, 240, 0);
+}
+
+#password_label {
+    color: hsl(200, 100%, 50%);
+}
+
+.label_form{
+    font-family: BaiJamjuree-Light, BaiJamjuree-Medium;
+    color: #afff30;
+}

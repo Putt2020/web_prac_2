@@ -8,14 +8,31 @@
     <h1><span style="background-color: tomato;">This is a span</span></h1>
     <h1><div style="background-color: turquoise;">This is a div</div></h1>
     <br>
-    <p>This is normal text</p>
-    <p>This is <b>bold</b> text</p>
-    <p>This is <i>italic</i> text</p>
-    <p>This is <u>underlined</u> text</p>
-    <p>This is <del>deleted</del> text</p>
-    <p>This is <big>big</big> text</p>
-    <p>This is <small>small</small> text</p>
-    <p>This is <sub>subsript</sub> text</p>
+    <h4> Text Tags List</h4>
+    <ul>
+        <li>This is normal text</li>
+        <ul>
+            <li>This is <b>bold</b> text</li>
+            <li>This is <i>italic</i> text</li>
+        </ul>
+    </ul>
+
+    <ol>
+        <li>This is <u>underlined</u> text</li>
+        <ol>
+            <li>This is <del>deleted</del> text</li>
+            <li>This is <big>big</big> text</li>
+        </ol>
+    </ol>
+    
+    <dl style="background-color: floralwhite; border: 2px solid; padding: 4px;">
+        <dt>This is <small>small</small> text</dt>
+        <dd>Use small tags to make text small</dd>
+
+        <dt>This is <sub>subsript</sub> text</dt>
+        <dd>Use sub tags to make text subscripted</dd>
+    </dl>    
+
     <p>This is <sup>superscript</sup> text</p>
     <p>This is <tt>monospaced</tt> text</p>
     <p>This is <mark style="background-color: lightgreen;">mark</mark> text</p>
@@ -27,6 +44,41 @@
         Aspernatur explicabo doloribus, at deleniti iusto minus eligendi harum reiciendis enim 
         maxime necessitatibus iure? Libero maiores voluptas quae optio perferendis, 
         voluptatibus nihil?</div></p>
+
+    <table border="1" style="background-color: black;">
+        <tr align="center" style="background-color: lightblue;">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Firday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr align="center" style="background-color: lightcyan;">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-6</td>
+        </tr>
+    </table>
+
+    <br>
+    <button onclick="doSomething()" style="font-size: 25px; background-color: lightblue; 
+    color: crimson; border-radius: 25px;">Bye Bye</button>
+    
+    <br>
+    <p id="greeting">Hello</p>
+    <p id="greeting">Hello</p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML = "Goodbye"
+        }
+    </script>
 
 </body>
 

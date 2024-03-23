@@ -1,0 +1,41 @@
+h1 {
+    border: 3px solid hsl(262, 100%, 56%);
+    border-radius: 20px;
+}
+h2 {
+    border-bottom: 3px solid rgb(255,28,28);
+    border-top: 3px solid rgb(255,255,28);
+    border-left: 3px dotted rgb(255,179,37);
+    border-right: 3px dotted rgb(60,255,28);
+
+    border-radius: 10px;
+}
+
+#headder {
+    margin: 2em 5px;
+    text-shadow: -3px 3px 10px hsl(30, 100%, 61%), 3px -3px 10px hsl(170, 100%, 61%);
+    background-color: lightgray;
+    padding: 10px;
+    box-shadow: 3px 3px 5px;
+}
+
+#img1 {
+    float: left;
+    margin-left: 10px;
+    border-radius: 1em;
+}
+
+#img2 {
+    /* float allow image to stay on the selected side */
+    float: right;
+    margin-right: 10px;
+    border-radius: 1em;
+}
+
+#img_container {
+    border: 3px solid black;
+    padding: 5px;
+    background-color: lightskyblue;
+    /* flow-root will assure that it contains all the element within it */
+    display: flow-root;
+}

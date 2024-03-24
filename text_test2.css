@@ -1,4 +1,11 @@
 * {
+    /* border-box will allow padding and border to be calculate with 
+    height and width, and make sure that the size is correct
+    normally, heigth and width are  calculated like these
+    1. width + padding + border = actual width of an element
+    2. height + padding + border = actual height of an element
+    Hence element might be bigger due to padding
+*/
     box-sizing: border-box;
     background-color: white;
 }

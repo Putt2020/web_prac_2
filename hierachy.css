@@ -13,3 +13,41 @@
 #container1 + p {
     background-color: rgb(225, 196, 52);
 }
+
+h1::first-letter {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+p::first-line {
+    color: rgb(59, 59, 59);
+}
+
+p::selection {
+    color: lightgoldenrodyellow;
+    background-color: gray;
+}
+
+#fruit li::marker{ /* buller point from li*/
+    content: "❓";
+    font-size: 1.2em;
+}
+
+#fruit li::before{
+    content: "✔";
+    font-size: 1.2em;
+    color: lightgreen;
+}
+
+#apple::after{
+    content: "🍎";
+}
+
+#orange::after{
+    content: "🧡";
+}
+
+#banana::after{
+    content: "🍌";
+}
+

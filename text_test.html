@@ -2,20 +2,33 @@
 <html>
 <head>
     <link rel="icon" type="image/png" href="./image/music_favicon.png">
+    <link rel="stylesheet" href="text_test.css">
 </head>
 <body>
+    <header>
+        <a href="text_test2.html">text2</a>
+        <a href="hierachy.html">hierachy</a>
+        <a href="index.html">home</a>
+        <a href="https://google.com">Google</a>
+    </header>
+
     <h1>This is a text test</h1>
     <h1><span style="background-color: tomato;">This is a span</span></h1>
     <h1><div style="background-color: turquoise;">This is a div</div></h1>
     <br>
     <h4> Text Tags List</h4>
-    <ul>
-        <li>This is normal text</li>
+    <div id="ul_list">
         <ul>
-            <li>This is <b>bold</b> text</li>
-            <li>This is <i>italic</i> text</li>
-        </ul>
-    </ul>
+            <li>This is normal text</li>
+            <ul>
+                <li>This is <b>bold</b> text</li>
+                <li>This is <i>italic</i> text</li>
+                <li>This is text</li>
+                <li>This is text</li>
+            </ul>
+        </ul>    
+    </div>
+    
 
     <ol>
         <li>This is <u>underlined</u> text</li>
@@ -33,9 +46,11 @@
         <dd>Use sub tags to make text subscripted</dd>
     </dl>    
 
-    <p>This is <sup>superscript</sup> text</p>
-    <p>This is <tt>monospaced</tt> text</p>
-    <p>This is <mark style="background-color: lightgreen;">mark</mark> text</p>
+    <div id="hoper"> Hover me
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <tt>monospaced</tt> text</p>
+        <p>This is <mark style="background-color: lightgreen;">mark</mark> text</p>   
+    </div>
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <scan style="background-color: coral;">
         Velit, veritatis! Quibusdam modi aperiam nobis illo alias a corrupti recusandae doloribus? 
@@ -67,8 +82,7 @@
     </table>
 
     <br>
-    <button onclick="doSomething()" style="font-size: 25px; background-color: lightblue; 
-    color: crimson; border-radius: 25px;">Bye Bye</button>
+    <button id="Bye_butt" onclick="doSomething()">Say Bye</button>
     
     <br>
     <p id="greeting">Hello</p>
@@ -76,7 +90,14 @@
 
     <script>
         function doSomething(){
-            document.getElementById("greeting").innerHTML = "Goodbye"
+            if (document.getElementById("greeting").innerHTML == "Goodbye") {
+                document.getElementById("greeting").innerHTML = "Hello";
+                document.getElementById("Bye_butt").innerHTML = "Say Bye";
+            }
+            else {
+                document.getElementById("greeting").innerHTML = "Goodbye";
+                document.getElementById("Bye_butt").innerHTML = "Say Hello";
+            }
         }
     </script>
 

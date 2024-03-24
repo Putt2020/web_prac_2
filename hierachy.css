@@ -1,0 +1,15 @@
+#container2 p {
+    background-color: yellow;
+}
+
+#container1 > p {
+    background-color: lemonchiffon;
+}
+
+#container1 ~ div {
+    background-color: goldenrod;
+}
+
+#container1 + p {
+    background-color: rgb(225, 196, 52);
+}

@@ -1,0 +1,93 @@
+body{
+    background-image: url(image/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#ul_list{
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    /* opacity: 50%; */
+}
+
+#Bye_butt{
+    font-size: 1em; 
+    background-color: lightblue; 
+    color: crimson; 
+    border-radius: 25px;
+}
+
+#Bye_butt:hover{
+    font-size: 1.5em;
+    background-color: orange;
+    color:white;
+}
+
+#Bye_butt:active{
+    font-size: 2em;
+    background-color: crimson;
+    color: aquamarine;
+}
+
+header {
+    background-color: white; 
+    padding: 12px;
+}
+
+a:link{
+    color: hsl(221, 100%, 70%);
+}
+
+a:hover{
+    background-color: rgb(230, 57, 0);
+    font-weight: bold;
+    font-size: 1.1em;
+    color: hsl(138, 100%, 87%);
+}
+
+a:active {
+    background-color: rgb(255, 109, 61);
+    font-weight: bold;
+    font-size: 1.2em;
+    color: hsl(138, 79%, 48%);
+}
+
+a:visited {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: hsl(158, 97%, 44%);
+}
+
+li:hover {
+    background-color: rgb(237, 255, 136);
+}
+
+li:not(:hover) {
+    background-color: rgb(255, 255, 255);
+    opacity: 75%;
+}
+
+li:nth-child(2n-2){
+    background-color: rgb(255, 234, 164);
+    opacity: 50%;
+}
+
+#hoper {
+    font-size: 1em;
+    background-color: red;
+}
+
+#hoper p{
+    background-color: aquamarine;
+    /* padding: 4px; */
+    display: none;
+}
+
+#hoper:hover p{
+    display: block;
+}
